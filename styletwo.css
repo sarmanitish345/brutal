@@ -9,6 +9,10 @@
     
     
 } 
+html {
+    scroll-padding-top: 90px; /* or the height of your fixed nav */
+    scroll-behavior: smooth;
+  }
 html, body {
 
     margin: 0;
@@ -100,8 +104,8 @@ html, body {
 }
 
 .hero-content { 
-    padding-left: 3rem;
-    padding-top:10rem;
+    padding-left: 10rem;
+    padding-top:13rem;
     display:flex;
     flex-direction: column;
     margin:0;
@@ -221,6 +225,7 @@ html, body {
 
 
 .hero-title {
+    
     margin: 0;
     animation: slidefromleft 2s ease forwards;
     max-width: 70vh;
@@ -248,8 +253,8 @@ html, body {
     text-align: left;
 }
 
-.prebook-box{
-    /* box-shadow: 10px 10px 10px whitesmoke; */
+  /* .prebook-box{
+    ##box-shadow: 10px 10px 10px whitesmoke; ##
     display:flex;
     align-items: center;
     justify-content: center;
@@ -262,17 +267,17 @@ html, body {
     text-decoration: none;
     background-color:rgb(196, 146, 20);
     animation: to-and-fro 15s ease-in-out infinite;
-    /* animation:vanish 20s ease forwards; */
+    ## animation:vanish 20s ease forwards; ##
     
-}
+}   */
 
-.prebook-box:hover{
+/* .prebook-box:hover{
     
-    /* animation:vanish 20s ease forwards; */
-    background-color: rgb(245, 242, 235); 
-    /* transition:6s; */
-    /* box-shadow: 4px 4px 4px whitesmoke; */
-}
+   ##  animation:vanish 20s ease forwards; ##
+   ## background-color: rgb(245, 242, 235); ##
+    ## transition:6s; ##
+    ## box-shadow: 4px 4px 4px whitesmoke; ##
+}  */
 .hero-section{
         width:100%; 
         background-color: black;
@@ -282,6 +287,7 @@ html, body {
         
 }
 .hero-ads{
+    
     height:9rem;
     background-color: black;
     display:flex;
@@ -290,6 +296,7 @@ html, body {
 
 }
 .adv-button{
+   
     height:4rem;
     width:10rem;
     margin:0 auto;
@@ -297,6 +304,7 @@ html, body {
     background-color:black;
     display:flex;
     flex-direction: column;
+    /* gap:0.4px; */
     align-items:center;
     justify-content: center;
 
@@ -333,9 +341,10 @@ html, body {
 
 
 .about-section{
-        padding-top: 2rem;
+        padding-left: 12rem;
+        padding-top:3rem ;
         margin:0;
-        padding-left:3rem;
+        /* padding-left:3rem; */
         height:100vh;
         width:100%; 
         background-color: rgb(245, 242, 242);
@@ -348,7 +357,7 @@ html, body {
     align-items: center;
     justify-content: center;
     height:0.5rem;
-    width:15rem;
+    width:10rem;
     font-weight:bolder;
     font-size: 15px;
     color:whitesmoke;
@@ -359,8 +368,9 @@ html, body {
 
 }
 .para-text{
+    margin:10px 40px 10px 40px;
     font-weight: bolder;
-    word-spacing: 5px;
+    /* word-spacing: 5px; */
     font-size: 20px;
 }
 .writing-box{
@@ -380,11 +390,11 @@ html, body {
 .para-text2{
   
     font-size: 20px;
-    color:rgb(196, 146, 20);
+    color:black;
     font-weight: 700;
 
 }
-.joinus-box{
+/* .joinus-box{
     box-shadow: 20px 20px 20px black;
     display:flex;
     align-items: center;
@@ -398,12 +408,12 @@ html, body {
     text-decoration: none;
     background-color:rgb(181, 132, 10);
   
-}
-.joinus-box:hover{
+}*/
+/*.joinus-box:hover{
     background-color: rgba(211, 165, 38, 0.765);
     transition: 0.23s;
     box-shadow: 10px 10px 5px black;
-}
+} */
 
 
 .filler{
@@ -430,9 +440,9 @@ html, body {
 }
 .left-contact{
     
-    padding-left: 3rem;
+    padding-left: 10rem;
     height:100vh;
-    background-color: black;
+    background-color:black;
     width:50%
 }
 
@@ -444,10 +454,12 @@ html, body {
 }
 
 .box{
+    margin:30px;
+    /* margin-left: 20px; */
     margin-bottom: 30px;
     display:flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     height:0.5rem;
     width:15rem;
     font-weight:900;
@@ -489,7 +501,8 @@ html, body {
 }
 
 .box3{
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-bottom: 2rem;
     display:flex;
     align-items: center;
     height:0.5rem;
@@ -498,7 +511,7 @@ html, body {
     font-size: 10px;
     color: grey;
     background-color:rgb(0, 0, 0);
-    padding:20px;
+    padding:35px;
     text-decoration: none;
 }
 .icon-container{
@@ -513,12 +526,12 @@ html, body {
 }
 .box-repeat{
     
-    margin-bottom: 20px;
-    margin-top: 30px;
+    /* margin-bottom: 20px; */
+    /* margin-top: 30px; */
     display:flex;
     align-items: center;
-    justify-content: center; 
-     justify-content: space-between;
+    /* justify-content: center;  */
+    /* justify-content: space-between; */
     height:0.5rem;
     width:20rem;
     font-weight:900;
@@ -529,6 +542,9 @@ html, body {
     text-decoration: none;
 
 }
+.NA{
+    margin:0px 0px 0px 15px;
+}
 
 
 
@@ -536,12 +552,13 @@ html, body {
     padding: 2rem;
     background-color: white;
     width:70%;
-    height:60vh;
+    height:82vh;
     
 }
 .contact-card:hover{
     transition: 0.5s;
-    transform:perspective(1000px) rotateX(22.77deg) rotateY(-1.54deg) translateX(8px) translateY(8px);
+     transform:perspective(1000px) translateX(8px) translateY(-8px); 
+     /* rotateX(22.77deg) rotateY(-1.54deg)  */
 
 }
 
@@ -550,32 +567,35 @@ html, body {
     font-size: 20px;
     font-weight: 800;
     color: black;
-    margin: 20px;
+    margin: 10px;
 }
 
 .text-input{
+    margin:10px 10px 50px 10px;
     font-size: 15px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-width: 4px;
     border-color:black;
-    width: 20rem;
+    width: 23rem;
     height:3rem;
-    margin-bottom: 20px;
+    /* margin-bottom: 50px; */
 }
 
 .submit-button{
+    margin-left: 10px;
     box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.3);
     text-decoration: none;
     background-color:rgb(196, 146, 20);
     color:black;
     border: none;
     /* border-radius: 0.5rem; */
-    padding: 15px 20px;
+    padding: 20px 20px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
 
 }
+
 .submit-button:hover{
 transition: 0.3s;
 box-shadow:  30px 30px 10px rgba(0, 0, 0, 0.3);
@@ -595,11 +615,12 @@ box-shadow:  30px 30px 10px rgba(0, 0, 0, 0.3);
     
   }
   .footer-top {
+    padding-left:10rem;
     width:100%;
     height:40vh;
     background-color:white;
     color: black;
-    padding: 40px 20px; 
+    /* padding: 40px 20px;  */
     /* border-top: 4px solid #000; */
   
     display: flex;
@@ -607,18 +628,23 @@ box-shadow:  30px 30px 10px rgba(0, 0, 0, 0.3);
 }
 
   .logo-section{
-    width:50%;
+    width:40%;
     height:40vh;
     background-color:white;
   }
+  .logox{
+    margin-left: 10px;
+  }
 
   .intouch-section{
-    padding-left:60px;
-    width:70%;
+    padding-top:1.6rem;
+    padding-left:11rem;
+    width:60%;
     height:40vh;
     background-color: white;
   }
   .tagline{
+    margin-left: 30px;
     font-size: 15px;
     font-weight: 900;
     color:grey;
